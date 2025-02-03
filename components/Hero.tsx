@@ -19,7 +19,7 @@ export default function Hero() {
       >
         <Image
           src="/profile-picture.jpg"
-          alt="Your Name"
+          alt=""
           width={200}
           height={200}
           className="rounded-full border-4 border-[#64ffda] shadow-lg"
@@ -32,7 +32,7 @@ export default function Hero() {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="text-4xl md:text-6xl font-bold mb-4"
       >
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#64ffda] to-[#00bfff]">Your Name</span>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#64ffda] to-[#00bfff]">Yassine Louati</span>
       </motion.h1>
       <motion.h2
         initial={{ y: 20, opacity: 0 }}
@@ -40,7 +40,7 @@ export default function Hero() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="text-2xl md:text-3xl text-[#64ffda] mb-6"
       >
-        Full Stack Developer
+       Machine Learning Engineer
       </motion.h2>
       <motion.p
         initial={{ y: 20, opacity: 0 }}
