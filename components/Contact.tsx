@@ -53,7 +53,7 @@ export default function Contact() {
                 variant="outline"
                 className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105"
               >
-                <a href="/resume.pdf" download>
+                <a href="resume.pdf" download>
                   Download Resume
                 </a>
               </Button>
