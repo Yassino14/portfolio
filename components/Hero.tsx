@@ -18,7 +18,7 @@ export default function Hero() {
         className="mb-8 relative"
       >
         <Image
-          src="/profile-picture.jpg"
+          src="/img.png"
           alt=""
           width={200}
           height={200}
@@ -40,7 +40,7 @@ export default function Hero() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="text-2xl md:text-3xl text-[#64ffda] mb-6"
       >
-       Machine Learning Engineer
+       Data Scientist
       </motion.h2>
       <motion.p
         initial={{ y: 20, opacity: 0 }}
@@ -48,7 +48,7 @@ export default function Hero() {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="text-lg md:text-xl mb-8 max-w-2xl text-[#8892b0]"
       >
-        Crafting elegant solutions to complex problems through code and creativity.
+        A creative problem-solver who combines technical expertise with innovative thinking to craft elegant solutions for complex challenges.
       </motion.p>
       <motion.div
         initial={{ y: 20, opacity: 0 }}

@@ -5,13 +5,13 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const aboutItems = [
   {
-    title: "Passionate Developer",
-    content: "With a keen eye for design and a love for creating seamless user experiences.",
+    title: "Innovative Developer",
+    content: "Passionate about building intelligent systems and enhancing user experiences.",
   },
-  { title: "Problem Solver", content: "Thrives on tackling complex challenges and finding innovative solutions." },
+  { title: "Problem Solver & Optimizer", content: "Enjoys tackling complex challenges." },
   {
-    title: "Continuous Learner",
-    content: "Always staying up-to-date with the latest technologies and best practices.",
+    title: "AI & Data Enthusiast",
+    content: "From machine learning models to data-driven insights, always exploring the power of AI.",
   },
 ]
 

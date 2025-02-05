@@ -7,23 +7,18 @@ import { Button } from "@/components/ui/button"
 
 const testimonials = [
   {
-    name: "John Doe",
-    position: "CEO, Tech Innovators",
+    name: "Yazaki Tunisia",
+    position: "Global automotive parts supplier",
     content:
-      "An exceptional developer who consistently delivers high-quality work. Their attention to detail and problem-solving skills are outstanding.",
+      "With a deep understanding of technical issues and a strategic mindset, Yessine excels in crafting innovative solutions",
   },
   {
-    name: "Jane Smith",
-    position: "CTO, Digital Solutions Inc.",
+    name: "SCSI.tn",
+    position: "a leading ERP integrator since 2001.",
     content:
-      "Working with this developer has been a game-changer for our projects. Their technical expertise and ability to meet deadlines are truly impressive.",
+      "Yessine stands out for his ability to combine creativity and technical skills to design solutions tailored to the most complex challenges.",
   },
-  {
-    name: "Alex Johnson",
-    position: "Lead Developer, StartUp Co.",
-    content:
-      "I've had the pleasure of collaborating with this talented developer on several projects. Their code is clean, efficient, and well-documented.",
-  },
+  
 ]
 
 export default function Testimonials() {

@@ -6,37 +6,77 @@ import { motion, AnimatePresence } from "framer-motion"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
 
-const projectsData = [
+type Project = {
+  title: string
+  description: string
+  image: string
+  tags: string[]
+  githubLink: string
+}
+
+const projectsData: Project[] = [
   {
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory management.",
-    image: "/placeholder.svg?height=200&width=300",
-    tags: ["React", "Node.js", "MongoDB", "Socket.io"],
-    githubLink: "https://github.com/yourusername/e-commerce-platform",
-    demoLink: "https://e-commerce-platform-demo.com",
+    "title": "MERN Habit Tracker",
+    "description": "A habit tracker built with the MERN stack that helps users keep track of their daily habits, offering a simple and user-friendly interface.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["MERN", "MongoDB", "React", "Node.js"],
+    "githubLink": "https://github.com/Yassino14/projet_mern.git",
   },
   {
-    title: "Task Management App",
-    description: "A collaborative task management tool with real-time updates and analytics.",
-    image: "/placeholder.svg?height=200&width=300",
-    tags: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
-    githubLink: "https://github.com/yourusername/task-management-app",
-    demoLink: "https://task-management-app-demo.com",
+    "title": "Sa77a - Sleep & Hydration Tracker (Android)",
+    "description": "An Android app designed for tracking sleep and hydration, with a focus on creating personalized reminders and health tips.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["Android", "Java", "Sleep Tracking", "Hydration"],
+    "githubLink": "https://github.com/yourusername/sa77a-android-app",
   },
   {
-    title: "AI-powered Chatbot",
-    description: "An intelligent chatbot using natural language processing for customer support.",
-    image: "/placeholder.svg?height=200&width=300",
-    tags: ["Python", "TensorFlow", "Flask", "React"],
-    githubLink: "https://github.com/yourusername/ai-chatbot",
-    demoLink: "https://ai-chatbot-demo.com",
+    "title": "AI-based Diet Planner",
+    "description": "A Django-based web app that uses AI to generate personalized meal plans based on users’ weight, height, activity level, age, and gender.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["Django", "Python", "AI", "API"],
+    "githubLink": "https://github.com/Yassino14/Sa77a-DietPlanner.git",
   },
+  {
+    "title": "Streamlit Tunisair Flight Predictor",
+    "description": "A machine learning model deployed using Streamlit that predicts Tunisair flight arrivals, analyzing data to estimate whether a flight will be on time or late.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["Streamlit", "Machine Learning", "Python", "Flight Prediction"],
+    "githubLink": "https://github.com/Yassino14/Streamlit-Flight-Delay-Predictor.git",
+  },
+  {
+    "title": "Emotion Detector with OpenCV & Streamlit",
+    "description": "An emotion detection app built with OpenCV and Streamlit that uses facial recognition to detect emotions in real-time from video input.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["OpenCV", "Streamlit", "Machine Learning", "Emotion Detection"],
+    "githubLink": "https://github.com/Yassino14/Emotion-Detector.git",
+  },
+  {
+    "title": "Sa77a - Sleep & Hydration Tracker (Mobile)",
+    "description": "A mobile app that tracks sleep patterns and hydration, offering users personalized health insights and reminders for better well-being.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["Mobile App", "Sleep Tracking", "Hydration", "Android Studio"],
+    "githubLink": "https://github.com/Yassino14/Sa77a-Mobile-Tracker.git",
+  },
+  {
+    "title": "Portfolio with Next.js",
+    "description": "A personal portfolio built with Next.js, showcasing a variety of projects and highlighting web development skills.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["Next.js", "Web Development", "Portfolio"],
+    "githubLink": "https://github.com/Yassino14/portfolio.git",
+  },
+  {
+    "title": "Power BI Dashboards",
+    "description": "Interactive and data-driven dashboards created using Power BI, offering deep insights into various datasets.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["Power BI", "Data Visualization", "Dashboards"],
+    "githubLink": "https://github.com/Yassino14/Power-BI-Dashboards.git",
+  }
 ]
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState(null)
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
   return (
     <section id="projects" className="py-20">
@@ -87,15 +127,6 @@ export default function Projects() {
                       onClick={(e) => e.stopPropagation()}
                     >
                       <FaGithub size={20} />
-                    </a>
-                    <a
-                      href={project.demoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#64ffda] hover:text-[#00bfff]"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <FaExternalLinkAlt size={20} />
                     </a>
                   </div>
                 </CardContent>
@@ -151,15 +182,6 @@ export default function Projects() {
                   <FaGithub size={20} className="mr-2" />
                   GitHub
                 </a>
-                <a
-                  href={selectedProject.demoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#64ffda] hover:text-[#00bfff] flex items-center"
-                >
-                  <FaExternalLinkAlt size={20} className="mr-2" />
-                  Live Demo
-                </a>
               </div>
             </motion.div>
           </motion.div>
@@ -168,4 +190,3 @@ export default function Projects() {
     </section>
   )
 }
-

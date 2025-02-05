@@ -4,17 +4,15 @@ import { motion } from "framer-motion"
 
 const educationData = [
   {
-    degree: "Master of Science in Computer Science",
-    school: "University of Technology",
+    degree: " Bachelor’s Degree in IT Management (Business Intelligence)",
+    school: "Higher Institute of Management Bizerte",
     year: "2018 - 2020",
-    description: "Specialized in Artificial Intelligence and Machine Learning",
-  },
+    },
   {
-    degree: "Bachelor of Science in Software Engineering",
-    school: "State University",
-    year: "2014 - 2018",
-    description: "Focused on web technologies and software architecture",
-  },
+    degree: "Baccalaureate in Computer Science  ",
+    school: "Habib Thameur High School, Bizerte",
+    year: "2021 - 2022",
+    },
 ]
 
 export default function Education() {
@@ -43,7 +41,6 @@ export default function Education() {
                 <h3 className="text-xl font-semibold mb-2">{edu.degree}</h3>
                 <p className="text-blue-300 mb-1">{edu.school}</p>
                 <p className="text-blue-400 mb-2">{edu.year}</p>
-                <p className="text-sm">{edu.description}</p>
               </div>
               <div className="absolute top-6 w-4 h-4 rounded-full bg-blue-600 shadow">
                 <div className="w-2 h-2 rounded-full bg-blue-300 absolute top-1 left-1"></div>
