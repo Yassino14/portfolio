@@ -38,7 +38,7 @@ export default function Navbar() {
             href="#home"
             className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#64ffda] to-[#00bfff]"
           >
-            Your Name
+          Yassine Louati
           </Link>
           <div className="hidden md:flex space-x-4">
             {navItems.map((item) => (
