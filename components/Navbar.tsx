@@ -55,7 +55,7 @@ export default function Navbar() {
           </div>
           <div className="flex space-x-4">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/yassine-louati-9629a219a/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#8892b0] hover:text-[#64ffda]"
@@ -63,14 +63,14 @@ export default function Navbar() {
               <FaLinkedin size={20} />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Yassino14"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#8892b0] hover:text-[#64ffda]"
             >
               <FaGithub size={20} />
             </a>
-            <a href="mailto:your.email@example.com" className="text-[#8892b0] hover:text-[#64ffda]">
+            <a href="mailto:louati.yessine1@example.com" className="text-[#8892b0] hover:text-[#64ffda]">
               <FaEnvelope size={20} />
             </a>
           </div>
