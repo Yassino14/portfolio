@@ -18,7 +18,7 @@ export default function Hero() {
         className="mb-8 relative"
       >
         <Image
-          src="/img.png"
+          src="pp.png"          
           alt=""
           width={200}
           height={200}

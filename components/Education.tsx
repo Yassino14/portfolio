@@ -6,7 +6,7 @@ const educationData = [
   {
     degree: " Bachelor’s Degree in IT Management (Business Intelligence)",
     school: "Higher Institute of Management Bizerte",
-    year: "2018 - 2020",
+    year: "2022-2025",
     },
   {
     degree: "Baccalaureate in Computer Science  ",
