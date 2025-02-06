@@ -10,10 +10,9 @@ export const metadata = {
   title: "Yassino",
   description: "A showcase of my work and skills",
   icons: {
-    icon: '/pp.png',
+    icon : '/log.jpg',
   },
 }
-
 export default function RootLayout({
   children,
 }: {
