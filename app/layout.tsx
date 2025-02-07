@@ -8,6 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Yassino",
   icons: { icon: "/pp.png" },
+  openGraph: {
+    title: "Yassino",
+    images: ["/pp.png"], // Ensure this image is in the public folder
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
