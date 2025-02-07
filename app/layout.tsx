@@ -10,7 +10,8 @@ export const metadata = {
   icons: { icon: "/log.jpg" },
   openGraph: {
     title: "Yassino",
-    images: ["/log.jpg"], // Ensure this image is in the public folder
+    images: ["/log.jpg"],
+    description:"Explore my projects, skills, and experience." // Ensure this image is in the public folder
   },
 };
 
