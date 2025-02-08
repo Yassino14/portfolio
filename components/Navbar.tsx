@@ -77,14 +77,6 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="text-[#8892b0] hover:text-[#64ffda]"
             >
-              <FaGithub size={20} />
-            </a>
-            <a
-              href="https://www.upwork.com/freelancers/~01ff93ad493d0f6467"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#8892b0] hover:text-[#64ffda]"
-            >
               <FaSquareUpwork size={20} />
             </a>
             <a href="mailto:louati.yessine1@example.com" className="text-[#8892b0] hover:text-[#64ffda]">
