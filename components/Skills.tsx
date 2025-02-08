@@ -1,9 +1,29 @@
 "use client"
 
 import { motion } from "framer-motion"
-import React from "react";
-import { FaReact, FaNodeJs, FaPython, FaDatabase, FaJira, FaAndroid, FaHtml5, FaCss3, FaJs, FaStar, FaPhp, FaWindows, FaRProject, FaChartBar, FaHandsHelping, FaUsers, FaGit, FaGithub, FaCode, FaWind, FaBrain } from "react-icons/fa"
-import { SiKeras, SiNumpy, SiPandas, SiStreamlit, SiTypescript} from "react-icons/si"
+import {
+  FaReact,
+  FaPython,
+  FaDatabase,
+  FaJira,
+  FaBrain,
+  FaAndroid,
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaStar,
+  FaPhp,
+  FaWindows,
+  FaRProject,
+  FaChartBar,
+  FaUsers,
+  FaHandsHelping,
+  FaGit,
+  FaGithub,
+  FaCode,
+  FaWind,
+} from "react-icons/fa"
+import { SiNumpy, SiKeras, SiPandas, SiStreamlit } from "react-icons/si"
 
 const skillsData = [
   {
@@ -30,7 +50,7 @@ const skillsData = [
       { name: "Keras", icon: SiKeras, color: "#D00000" },
       { name: "Pandas", icon: SiPandas, color: "#130754" },
       { name: "YOLO", icon: FaBrain, color: "#FFAA00" },
-      { name: "Streamlit", icon:SiStreamlit, color: "#FF4B4B" },
+      { name: "Streamlit", icon: SiStreamlit, color: "#FF4B4B" },
       { name: "Django", icon: FaPython, color: "#092E20" },
       { name: "Tailwind", icon: FaWind, color: "#38B2AC" },
     ],
@@ -67,8 +87,7 @@ const skillsData = [
       { name: "Teamwork", icon: FaHandsHelping, color: "#32CD32" },
     ],
   },
-];
-
+]
 
 export default function Skills() {
   return (
@@ -82,18 +101,30 @@ export default function Skills() {
         >
           Skills
         </motion.h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-          {skillsData.map((skill, index) => (
+        <div className="space-y-12">
+          {skillsData.map((category, categoryIndex) => (
             <motion.div
-              key={index}
+              key={categoryIndex}
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-[#112240] p-4 rounded-lg flex flex-col items-center justify-center"
+              transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
             >
-              {React.createElement(skill.icon, { size: 48, className: "mb-2 text-[#ccd6f6]" })}
-<span className="font-semibold text-[#8892b0]">{skill.category}</span>
-
+              <h3 className="text-2xl font-semibold mb-4 text-[#8892b0] flex items-center">
+                <category.icon className="mr-2" size={24} />
+                {category.category}
+              </h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                {category.skills.map((skill, skillIndex) => (
+                  <motion.div
+                    key={skillIndex}
+                    whileHover={{ scale: 1.05 }}
+                    className="bg-[#112240] p-4 rounded-lg flex flex-col items-center justify-center transition-all duration-300 hover:bg-[#1d3557]"
+                  >
+                    <skill.icon size={40} color={skill.color} className="mb-2" />
+                    <span className="font-semibold text-[#8892b0] text-center">{skill.name}</span>
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>
