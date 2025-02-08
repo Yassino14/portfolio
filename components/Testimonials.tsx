@@ -3,7 +3,6 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 const testimonials = [
   {
@@ -18,7 +17,6 @@ const testimonials = [
     content:
       "Yessine stands out for his ability to combine creativity and technical skills to design solutions tailored to the most complex challenges.",
   },
-  
 ]
 
 export default function Testimonials() {
@@ -39,7 +37,7 @@ export default function Testimonials() {
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-8 text-center"
+          className="text-3xl font-bold mb-8 text-center text-[#ccd6f6]"
         >
           Testimonials
         </motion.h2>
@@ -51,29 +49,43 @@ export default function Testimonials() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.5 }}
-              className="bg-blue-800/30 p-6 rounded-lg text-center"
+              className="bg-[#112240] p-6 rounded-lg text-center cursor-pointer select-none"
+              onClick={nextTestimonial}
             >
-              <p className="text-lg mb-4 italic">"{testimonials[currentIndex].content}"</p>
-              <p className="font-semibold">{testimonials[currentIndex].name}</p>
-              <p className="text-blue-300">{testimonials[currentIndex].position}</p>
+              <div className="relative">
+                <p className="text-lg mb-4 italic text-[#8892b0]">"{testimonials[currentIndex].content}"</p>
+                <p className="font-semibold text-[#64ffda]">{testimonials[currentIndex].name}</p>
+                <p className="text-[#64ffda]/70">{testimonials[currentIndex].position}</p>
+                <div
+                  className="absolute left-0 top-1/2 transform -translate-y-1/2 w-12 h-full flex items-center justify-start"
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    prevTestimonial()
+                  }}
+                >
+                  <ChevronLeft className="h-6 w-6 text-[#64ffda] opacity-50 hover:opacity-100 transition-opacity" />
+                </div>
+                <div
+                  className="absolute right-0 top-1/2 transform -translate-y-1/2 w-12 h-full flex items-center justify-end"
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    nextTestimonial()
+                  }}
+                >
+                  <ChevronRight className="h-6 w-6 text-[#64ffda] opacity-50 hover:opacity-100 transition-opacity" />
+                </div>
+              </div>
             </motion.div>
           </AnimatePresence>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full"
-            onClick={prevTestimonial}
-          >
-            <ChevronLeft className="h-6 w-6" />
-          </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-full"
-            onClick={nextTestimonial}
-          >
-            <ChevronRight className="h-6 w-6" />
-          </Button>
+          <div className="mt-4 flex justify-center space-x-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                className={`w-3 h-3 rounded-full ${index === currentIndex ? "bg-[#64ffda]" : "bg-[#64ffda]/30"}`}
+                onClick={() => setCurrentIndex(index)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

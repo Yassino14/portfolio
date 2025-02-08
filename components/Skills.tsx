@@ -36,7 +36,6 @@ const skillsData = [
       { name: "Python", icon: FaPython, color: "#3776AB" },
       { name: "JavaScript", icon: FaJs, color: "#F7DF1E" },
       { name: "Java", icon: FaJava, color: "#007396" },
-      { name: "C", icon: SiC, color: "#A8B9CC" },
       { name: "HTML", icon: FaHtml5, color: "#E34F26" },
       { name: "CSS", icon: FaCss3, color: "#1572B6" },
       { name: "PHP", icon: FaPhp, color: "#777BB4" },
