@@ -7,10 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Yassino",
-  icons: { icon: "/log.jpg" },
+  icons: { icon: "/pp.png" },
   openGraph: {
     title: "Yassino",
-    images: ["/log.jpg"],
+    images: ["/pp.png"],
     description:"Explore my projects, skills, and experience." // Ensure this image is in the public folder
   },
 };
