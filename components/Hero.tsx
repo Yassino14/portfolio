@@ -11,20 +11,65 @@ export default function Hero() {
       id="home"
       className="py-20 md:py-40 flex flex-col items-center justify-center text-center relative overflow-hidden"
     >
-      <motion.div
+       <motion.div
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="mb-8 relative"
       >
-        <Image
-          src="/pp.png"          
-          alt=""
-          width={200}
-          height={200}
-          className="rounded-full border-4 border-[#64ffda] shadow-lg"
-        />
-        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#64ffda] to-[#00bfff] opacity-20 animate-pulse"></div>
+        <div className="relative w-64 h-64 mx-auto">
+          {/* Background effects */}
+          <motion.div
+            className="absolute inset-0 rounded-full bg-gradient-to-r from-[#64ffda] to-[#00bfff] opacity-30"
+            animate={{
+              scale: [1, 1.2, 1],
+              rotate: [0, 360],
+            }}
+            transition={{
+              duration: 10,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "linear",
+            }}
+          />
+          <motion.div
+            className="absolute inset-2 rounded-full bg-[#0a192f]"
+            animate={{
+              scale: [1, 1.1, 1],
+            }}
+            transition={{
+              duration: 5,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="absolute inset-0 rounded-full bg-gradient-to-r from-[#64ffda] to-[#00bfff] opacity-20"
+            animate={{
+              scale: [1, 1.3, 1],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "easeInOut",
+            }}
+          />
+
+          {/* Profile picture */}
+          <motion.div
+            className="absolute inset-4 rounded-full overflow-hidden border-4 border-[#64ffda] shadow-lg"
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <Image
+              src="/pp.jpg"
+              alt=""
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full"
+            />
+          </motion.div>
+        </div>
       </motion.div>
       <motion.h1
         initial={{ y: 20, opacity: 0 }}

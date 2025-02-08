@@ -22,8 +22,11 @@ import {
   FaGithub,
   FaCode,
   FaWind,
+  FaJava,
+  FaFileExcel,
+  FaFilePowerpoint,
 } from "react-icons/fa"
-import { SiNumpy, SiKeras, SiPandas, SiStreamlit } from "react-icons/si"
+import { SiNumpy, SiKeras, SiPandas, SiStreamlit, SiC, SiCanva } from "react-icons/si"
 
 const skillsData = [
   {
@@ -32,6 +35,8 @@ const skillsData = [
     skills: [
       { name: "Python", icon: FaPython, color: "#3776AB" },
       { name: "JavaScript", icon: FaJs, color: "#F7DF1E" },
+      { name: "Java", icon: FaJava, color: "#007396" },
+      { name: "C", icon: SiC, color: "#A8B9CC" },
       { name: "HTML", icon: FaHtml5, color: "#E34F26" },
       { name: "CSS", icon: FaCss3, color: "#1572B6" },
       { name: "PHP", icon: FaPhp, color: "#777BB4" },
@@ -60,10 +65,9 @@ const skillsData = [
     icon: FaDatabase,
     skills: [
       { name: "SQL", icon: FaDatabase, color: "#4479A1" },
-      { name: "MariaDB", icon: FaDatabase, color: "#003545" },
       { name: "MySQL", icon: FaDatabase, color: "#00758F" },
       { name: "PostgreSQL", icon: FaDatabase, color: "#336791" },
-      { name: "Oracle", icon: FaDatabase, color: "#F80000" },
+      { name: "OracleDB", icon: FaDatabase, color: "#F80000" },
     ],
   },
   {
@@ -77,6 +81,9 @@ const skillsData = [
       { name: "Git", icon: FaGit, color: "#F05032" },
       { name: "GitHub", icon: FaGithub, color: "#181717" },
       { name: "VS Code", icon: FaCode, color: "#007ACC" },
+      { name: "Excel", icon: FaFileExcel, color: "#217346" },
+      { name: "PowerPoint", icon: FaFilePowerpoint, color: "#D24726" },
+      { name: "Canva", icon: SiCanva, color: "#00C4CC" },
     ],
   },
   {
