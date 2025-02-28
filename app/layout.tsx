@@ -11,7 +11,8 @@ export const metadata = {
   openGraph: {
     title: "Yassino",
     images: ["/pp1.png"],
-    description:"Explore my projects, skills, and experience." // Ensure this image is in the public folder
+    description:"Explore my projects, skills, and experience.", // Ensure this image is in the public folder
+    keywords:"yassine,yassino,louati,yassine louati,yessine,loueti,Data, Science,Web,Dev,Portfolio,AI,UML, diagram, generator, class diagram, sequence diagram, use case diagram, software design, modeling",
   },
 };
 
