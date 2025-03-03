@@ -25,6 +25,13 @@ const projectsData: Project[] = [
     "githubLink": "https://github.com/Yassino14/projet_mern.git",
   },
   {
+    "title": "UML Beast",
+    "description": "A Website built with Next.js , This UML Diagram Generator is powerful , free and simple to use , Take a look at it !",
+    "image": "/portfolio.png",
+    "tags": ["Next.js", "Web Development", "UML","UML BEAST","Diagram","Generator"],
+    "githubLink": "https://github.com/Yassino14/umlbeast.git",
+  },
+  {
     "title": "Sa77a - Sleep & Hydration Tracker (Android)",
     "description": "An Android app designed for tracking sleep and hydration, with a focus on creating personalized reminders and health tips.",
     "image": "/mob.jpg",
