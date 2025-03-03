@@ -27,8 +27,8 @@ const projectsData: Project[] = [
   {
     "title": "UML Beast",
     "description": "A Website built with Next.js , This UML Diagram Generator is powerful , free and simple to use , Take a look at it !",
-    "image": "/portfolio.png",
-    "tags": ["Next.js", "Web Development", "UML","UML BEAST","Diagram","Generator"],
+    "image": "/uml.png",
+    "tags": ["Next.js", "Web Development", "UML","Diagram","Generator"],
     "githubLink": "https://github.com/Yassino14/umlbeast.git",
   },
   {
