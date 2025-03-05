@@ -31,7 +31,7 @@ const projectsData: Project[] = [
     "image": "/uml.png",
     "tags": ["Next.js", "Web Development", "UML","Diagram","Generator"],
     "githubLink": "https://github.com/Yassino14/umlbeast.git",
-    "websiteLink":"https://umlbeast.yassinolouati.me",
+    "websiteLink":"https://www.umlbeast.yassinolouati.me",
     
   },
   {
@@ -68,7 +68,7 @@ const projectsData: Project[] = [
     "image": "/portfolio.png",
     "tags": ["Next.js", "Web Development", "Portfolio"],
     "githubLink": "https://github.com/Yassino14/portfolio.git",
-    "websiteLink":"https://yassinolouati.me",
+    "websiteLink":"https://www.yassinolouati.me",
   },
   {
     "title": "Power BI Dashboards",
