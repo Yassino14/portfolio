@@ -14,6 +14,7 @@ type Project = {
   image: string
   tags: string[]
   githubLink: string
+  websiteLink?: string;  
 }
 
 const projectsData: Project[] = [
@@ -30,6 +31,8 @@ const projectsData: Project[] = [
     "image": "/uml.png",
     "tags": ["Next.js", "Web Development", "UML","Diagram","Generator"],
     "githubLink": "https://github.com/Yassino14/umlbeast.git",
+    "websiteLink":"https://umlbeast.yassinolouati.me",
+    
   },
   {
     "title": "Sa77a - Sleep & Hydration Tracker (Android)",
@@ -65,6 +68,7 @@ const projectsData: Project[] = [
     "image": "/portfolio.png",
     "tags": ["Next.js", "Web Development", "Portfolio"],
     "githubLink": "https://github.com/Yassino14/portfolio.git",
+    "websiteLink":"https://yassinolouati.me",
   },
   {
     "title": "Power BI Dashboards",
