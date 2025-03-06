@@ -19,11 +19,12 @@ type Project = {
 
 const projectsData: Project[] = [
   {
-    "title": "MERN Habit Tracker",
-    "description": "A habit tracker built with the MERN stack that helps users keep track of their daily habits, offering a simple and user-friendly interface.",
-    "image": "/ht.png",
-    "tags": ["MERN", "MongoDB", "React", "Node.js"],
-    "githubLink": "https://github.com/Yassino14/projet_mern.git",
+    "title": "Portfolio with Next.js",
+    "description": "A personal portfolio built with Next.js, showcasing a variety of projects and highlighting web development skills.",
+    "image": "/portfolio.png",
+    "tags": ["Next.js", "Web Development", "Portfolio"],
+    "githubLink": "https://github.com/Yassino14/portfolio.git",
+    "websiteLink":"https://www.yassinolouati.me",
   },
   {
     "title": "UML Beast",
@@ -33,6 +34,21 @@ const projectsData: Project[] = [
     "githubLink": "https://github.com/Yassino14/umlbeast.git",
     "websiteLink":"https://www.umlbeast.yassinolouati.me",
     
+  },
+  {
+    "title": "Nerdvana",
+    "description": "A website built with Next.js, packed with powerful features for geeks and nerds .",
+    "image": "/nerdvana.png",
+    "tags": ["Next.js", "Web Development", "Geek", "Nerd", "LaTeX", "Software", "Converter", "Pomodoro", "Idea", "Advisor"],
+    "githubLink": "https://github.com/Yassino14/nerdvana",
+    "websiteLink": "https://www.nerdvana.yassinolouati.me"
+  },
+  {
+    "title": "MERN Habit Tracker",
+    "description": "A habit tracker built with the MERN stack that helps users keep track of their daily habits, offering a simple and user-friendly interface.",
+    "image": "/ht.png",
+    "tags": ["MERN", "MongoDB", "React", "Node.js"],
+    "githubLink": "https://github.com/Yassino14/projet_mern.git",
   },
   {
     "title": "Sa77a - Sleep & Hydration Tracker (Android)",
@@ -61,14 +77,6 @@ const projectsData: Project[] = [
     "image": "/emo.jpg",
     "tags": ["OpenCV", "Streamlit", "Machine Learning", "Emotion Detection"],
     "githubLink": "https://github.com/Yassino14/Emotion-Detector.git",
-  },
-  {
-    "title": "Portfolio with Next.js",
-    "description": "A personal portfolio built with Next.js, showcasing a variety of projects and highlighting web development skills.",
-    "image": "/portfolio.png",
-    "tags": ["Next.js", "Web Development", "Portfolio"],
-    "githubLink": "https://github.com/Yassino14/portfolio.git",
-    "websiteLink":"https://www.yassinolouati.me",
   },
   {
     "title": "Power BI Dashboards",
