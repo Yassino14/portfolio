@@ -44,6 +44,22 @@ const projectsData: Project[] = [
     "websiteLink": "https://www.nerdvana.yassinolouati.me"
   },
   {
+    "title": "Islamy",
+    "description": "A website built with Next.js, packed with powerful features for geeks and nerds .",
+    "image": "/Islamy.png",
+    "tags": ["Next.js", "Web Development", "islam", "chatbot", "ai", "api", "learn", "islamic", "gpt", "assistant"],
+    "githubLink": "https://github.com/Yassino14/Islamy",
+    "websiteLink": "https://www.islamy.yassinolouati.me"
+  },
+  {
+    "title": "Photool",
+    "description": "A website built with Next.js for Photo Editing and Enhancing .",
+    "image": "/photool.png",
+    "tags": ["Next.js", "Web Development", "design", "photo", "editing", "effects", "photoshop", "images", "crop", "contrast"],
+    "githubLink": "https://github.com/Yassino14/photool",
+    "websiteLink": "https://www.photool.yassinolouati.me"
+  },
+  {
     "title": "MERN Habit Tracker",
     "description": "A habit tracker built with the MERN stack that helps users keep track of their daily habits, offering a simple and user-friendly interface.",
     "image": "/ht.png",
