@@ -45,7 +45,7 @@ const projectsData: Project[] = [
   },
   {
     "title": "Islamy",
-    "description": "A website built with Next.js, packed with powerful features for geeks and nerds .",
+    "description": "Islamic AI Chatbot for religious questions .",
     "image": "/Islamy.png",
     "tags": ["Next.js", "Web Development", "islam", "chatbot", "ai", "api", "learn", "islamic", "gpt", "assistant"],
     "githubLink": "https://github.com/Yassino14/Islamy",
