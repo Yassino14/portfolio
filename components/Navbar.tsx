@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa"
+import { FaLinkedin, FaGithub, FaEnvelope, FaYoutube } from "react-icons/fa"
 import { FaSquareUpwork } from "react-icons/fa6";
 import Link from "next/link"
 
@@ -55,6 +55,14 @@ export default function Navbar() {
             ))}
           </div>
           <div className="flex space-x-4">
+            <a
+              href="https://www.youtube.com/@KingYassino"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#8892b0] hover:text-[#64ffda]"
+            >
+              <FaYoutube size={20} />
+            </a>
             <a
               href="https://www.linkedin.com/in/yassine-louati-9629a219a/"
               target="_blank"

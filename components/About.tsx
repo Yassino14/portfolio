@@ -13,6 +13,11 @@ const aboutItems = [
     title: "AI & Data Enthusiast",
     content: "From machine learning models to data-driven insights, always exploring the power of AI.",
   },
+  {
+    title: "Youtube Creator",
+    content: "Creating  Vlogs and Travel videos, sharing experiences and insights with the world.",
+    
+  },
 ]
 
 export default function About() {

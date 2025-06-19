@@ -14,7 +14,8 @@ type Project = {
   image: string
   tags: string[]
   githubLink: string
-  websiteLink?: string;  
+  websiteLink?: string;
+  youtubeLink?: string;
 }
 
 const projectsData: Project[] = [
@@ -34,6 +35,14 @@ const projectsData: Project[] = [
     "githubLink": "https://github.com/Yassino14/umlbeast.git",
     "websiteLink":"https://www.umlbeast.yassinolouati.me",
     
+  },
+   {
+    "title": "Vlogs & Travel Videos in King Yassino",
+    "description": "A YouTube channel featuring vlogs and travel videos, sharing experiences and insights from various journeys.",
+    "image": "/ytb.jpg",
+    "youtubeLink": "https://www.youtube.com/@KingYassino",
+    "tags": ["YouTube", "Vlogs", "Travel"],
+    "githubLink":"",
   },
   {
     "title": "Nerdvana",
@@ -129,13 +138,13 @@ export default function Projects() {
                 className="bg-[#112240] hover:bg-[#1d3557] transition-colors duration-300 cursor-pointer"
                 onClick={() => setSelectedProject(project)}
               >
-                <CardContent className="p-4">
+                <CardContent className="p-4 flex flex-col h-full">
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
                     width={300}
                     height={200}
-                    className="rounded-lg mb-4"
+                    className="rounded-lg mb-4 object-cover"
                   />
                   <h3 className="text-xl font-semibold mb-2 text-[#ccd6f6]">{project.title}</h3>
                   <p className="text-sm text-[#8892b0] mb-4">{project.description}</p>
@@ -146,7 +155,7 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex justify-between mt-auto">
                     <a
                       href={project.githubLink}
                       target="_blank"
@@ -190,7 +199,7 @@ export default function Projects() {
                 alt={selectedProject.title}
                 width={600}
                 height={400}
-                className="rounded-lg mb-4"
+                className="rounded-lg mb-4 object-cover"
               />
               <p className="text-[#8892b0] mb-4">{selectedProject.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
