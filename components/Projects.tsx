@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { FaGithub,FaLink, FaYoutube } from "react-icons/fa"
+import { FaGithub, FaLink, FaYoutube } from "react-icons/fa"
 
 type Project = {
   title: string
@@ -14,8 +14,8 @@ type Project = {
   image: string
   tags: string[]
   githubLink: string
-  websiteLink?: string;
-  youtubeLink?: string;
+  websiteLink?: string
+  youtubeLink?: string
 }
 
 const projectsData: Project[] = [
@@ -158,7 +158,7 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/Yassino14/Power-BI-Dashboards.git",
     websiteLink: "https://powerbidashboards.yassinolouati.me",
   },
-];
+]
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
@@ -174,13 +174,15 @@ export default function Projects() {
         >
           Projects
         </motion.h2>
+
+        {/* GRID OF PROJECT CARDS */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projectsData.map((project, index) => (
+          {projectsData.map((project, idx) => (
             <motion.div
-              key={index}
+              key={idx}
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
             >
               <Card
                 className="bg-[#112240] hover:bg-[#1d3557] transition-colors duration-300 cursor-pointer"
@@ -194,25 +196,59 @@ export default function Projects() {
                     height={200}
                     className="rounded-lg mb-4 object-cover"
                   />
-                  <h3 className="text-xl font-semibold mb-2 text-[#ccd6f6]">{project.title}</h3>
-                  <p className="text-sm text-[#8892b0] mb-4">{project.description}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-[#ccd6f6]">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-[#8892b0] mb-4">
+                    {project.description}
+                  </p>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((tag, tagIndex) => (
-                      <span key={tagIndex} className="bg-[#233554] text-xs text-[#64ffda] px-2 py-1 rounded">
+                    {project.tags.map((tag, tIdx) => (
+                      <span
+                        key={tIdx}
+                        className="bg-[#233554] text-xs text-[#64ffda] px-2 py-1 rounded"
+                      >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <div className="flex justify-between mt-auto">
-                    <a
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#64ffda] hover:text-[#00bfff]"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <FaGithub size={20} />
-                    </a>
+                  <div className="flex space-x-4 mt-auto">
+                    {project.githubLink && (
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#64ffda] hover:text-[#00bfff]"
+                        onClick={(e) => e.stopPropagation()}
+                        title="GitHub"
+                      >
+                        <FaGithub size={20} />
+                      </a>
+                    )}
+                    {project.websiteLink && (
+                      <a
+                        href={project.websiteLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#64ffda] hover:text-[#00bfff]"
+                        onClick={(e) => e.stopPropagation()}
+                        title="Live Site"
+                      >
+                        <FaLink size={20} />
+                      </a>
+                    )}
+                    {project.youtubeLink && (
+                      <a
+                        href={project.youtubeLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#64ffda] hover:text-[#00bfff]"
+                        onClick={(e) => e.stopPropagation()}
+                        title="YouTube"
+                      >
+                        <FaYoutube size={20} />
+                      </a>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -220,6 +256,8 @@ export default function Projects() {
           ))}
         </div>
       </div>
+
+      {/* MODAL DETAIL VIEW */}
       <AnimatePresence>
         {selectedProject && (
           <motion.div
@@ -237,11 +275,18 @@ export default function Projects() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-2xl font-bold text-[#ccd6f6]">{selectedProject.title}</h3>
-                <Button variant="ghost" size="icon" onClick={() => setSelectedProject(null)}>
+                <h3 className="text-2xl font-bold text-[#ccd6f6]">
+                  {selectedProject.title}
+                </h3>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setSelectedProject(null)}
+                >
                   <X className="h-6 w-6 text-[#64ffda]" />
                 </Button>
               </div>
+
               <Image
                 src={selectedProject.image || "/placeholder.svg"}
                 alt={selectedProject.title}
@@ -249,51 +294,55 @@ export default function Projects() {
                 height={400}
                 className="rounded-lg mb-4 object-cover"
               />
-              <p className="text-[#8892b0] mb-4">{selectedProject.description}</p>
+              <p className="text-[#8892b0] mb-4">
+                {selectedProject.description}
+              </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {selectedProject.tags.map((tag, tagIndex) => (
-                  <span key={tagIndex} className="bg-[#233554] text-xs text-[#64ffda] px-2 py-1 rounded">
+                {selectedProject.tags.map((tag, tIdx) => (
+                  <span
+                    key={tIdx}
+                    className="bg-[#233554] text-xs text-[#64ffda] px-2 py-1 rounded"
+                  >
                     {tag}
                   </span>
                 ))}
               </div>
+
               <div className="flex space-x-6">
-  {selectedProject.githubLink && (
-    <a
-      href={selectedProject.githubLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-[#64ffda] hover:text-[#00bfff] flex items-center"
-    >
-      <FaGithub size={20} className="mr-2" />
-      GitHub
-    </a>
-  )}
-
-  {selectedProject.websiteLink && (
-    <a
-      href={selectedProject.websiteLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-[#64ffda] hover:text-[#00bfff] flex items-center"
-    >
-      <FaLink size={20} className="mr-2" />
-      Live Site
-    </a>
-  )}
-
-  {selectedProject.youtubeLink && (
-    <a
-      href={selectedProject.youtubeLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-[#64ffda] hover:text-[#00bfff] flex items-center"
-    >
-      <FaYoutube size={20} className="mr-2" />
-      YouTube
-    </a>
-  )}
-</div>
+                {selectedProject.githubLink && (
+                  <a
+                    href={selectedProject.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#64ffda] hover:text-[#00bfff] flex items-center"
+                  >
+                    <FaGithub size={20} className="mr-2" />
+                    GitHub
+                  </a>
+                )}
+                {selectedProject.websiteLink && (
+                  <a
+                    href={selectedProject.websiteLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#64ffda] hover:text-[#00bfff] flex items-center"
+                  >
+                    <FaLink size={20} className="mr-2" />
+                    Live Site
+                  </a>
+                )}
+                {selectedProject.youtubeLink && (
+                  <a
+                    href={selectedProject.youtubeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#64ffda] hover:text-[#00bfff] flex items-center"
+                  >
+                    <FaYoutube size={20} className="mr-2" />
+                    YouTube
+                  </a>
+                )}
+              </div>
             </motion.div>
           </motion.div>
         )}
