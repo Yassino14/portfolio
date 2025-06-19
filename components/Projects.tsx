@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { FaGithub } from "react-icons/fa"
+import { FaGithub,FaLink, FaYoutube } from "react-icons/fa"
 
 type Project = {
   title: string
