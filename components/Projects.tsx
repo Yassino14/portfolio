@@ -257,17 +257,43 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              <div className="flex justify-between">
-                <a
-                  href={selectedProject.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#64ffda] hover:text-[#00bfff] flex items-center"
-                >
-                  <FaGithub size={20} className="mr-2" />
-                  GitHub
-                </a>
-              </div>
+              <div className="flex space-x-6">
+  {selectedProject.githubLink && (
+    <a
+      href={selectedProject.githubLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#64ffda] hover:text-[#00bfff] flex items-center"
+    >
+      <FaGithub size={20} className="mr-2" />
+      GitHub
+    </a>
+  )}
+
+  {selectedProject.websiteLink && (
+    <a
+      href={selectedProject.websiteLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#64ffda] hover:text-[#00bfff] flex items-center"
+    >
+      <FaLink size={20} className="mr-2" />
+      Live Site
+    </a>
+  )}
+
+  {selectedProject.youtubeLink && (
+    <a
+      href={selectedProject.youtubeLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#64ffda] hover:text-[#00bfff] flex items-center"
+    >
+      <FaYoutube size={20} className="mr-2" />
+      YouTube
+    </a>
+  )}
+</div>
             </motion.div>
           </motion.div>
         )}
