@@ -20,13 +20,11 @@ type Project = {
 
 const projectsData: Project[] = [
   {
-    title: "Portfolio with Next.js",
-    description:
-      "A personal portfolio built with Next.js, showcasing a variety of projects and highlighting web development skills.",
-    image: "/portfolio.png",
-    tags: ["Next.js", "Web Development", "Portfolio"],
-    githubLink: "https://github.com/Yassino14/portfolio.git",
-    websiteLink: "https://yassinolouati.me",
+    title: "Warehouse Route and Stock Optimizer",
+    description: "An ASP.NET Core MVC app leveraging A*, Exhaustive Research and Constraint Programming algorithms for optimal stocking layouts and routing paths, reducing picker travel time and energy consumption.",
+    image: "/smart.png",
+    tags: ['C#', 'ASP.NET Core', 'Dijkstra', 'Warehouse Optimization',"A* Algorithm", "Exhaustive Research", "Constraint Programming","sqlserver", "MVC", "Web Development"],
+    githubLink: "https://github.com/Yassino14/route",
   },
   {
     title: "UML Beast",
@@ -36,6 +34,15 @@ const projectsData: Project[] = [
     tags: ["Next.js", "Web Development", "UML", "Diagram", "Generator"],
     githubLink: "https://github.com/Yassino14/umlbeast.git",
     websiteLink: "https://umlbeast.yassinolouati.me",
+  },
+  {
+    title: "Portfolio with Next.js",
+    description:
+      "A personal portfolio built with Next.js, showcasing a variety of projects and highlighting web development skills.",
+    image: "/portfolio.png",
+    tags: ["Next.js", "Web Development", "Portfolio"],
+    githubLink: "https://github.com/Yassino14/portfolio.git",
+    websiteLink: "https://yassinolouati.me",
   },
   {
     title: "Vlogs & Travel Videos in King Yassino",
@@ -149,14 +156,22 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/Yassino14/Emotion-Detector.git",
     websiteLink: "https://emotiondetector.yassinolouati.me",
   },
-  {
-    title: "Power BI Dashboards",
+    {
+    title: "MERN Habit Tracker",
     description:
-      "Interactive and data-driven dashboards created using Power BI, offering deep insights into various datasets.",
-    image: "/power.png",
-    tags: ["Power BI", "Data Visualization", "Dashboards"],
-    githubLink: "https://github.com/Yassino14/Power-BI-Dashboards.git",
-    websiteLink: "https://powerbidashboards.yassinolouati.me",
+      "A habit tracker built with the MERN stack that helps users keep track of their daily habits, offering a simple and user-friendly interface.",
+    image: "/ht.png",
+    tags: ["MERN", "MongoDB", "React", "Node.js"],
+    githubLink: "https://github.com/Yassino14/projet_mern.git",
+  },
+  {
+    title: "Chart.js Dashboards",
+    description:
+      "Interactive and data-driven dashboards created using Chart js, showcasing various data visualizations and analytics.",
+    image: "/chartjs.png",
+    tags: ["Chart js", "Data Visualization", "Dashboards"],
+    githubLink: "https://github.com/Yassino14/Dashboard-Smart-Stock",
+    websiteLink: "https://yassino14.github.io/Dashboard-Smart-Stock/",
   },
 ]
 

@@ -17,6 +17,12 @@ const testimonials = [
     content:
       "Yessine stands out for his ability to combine creativity and technical skills to design solutions tailored to the most complex challenges.",
   },
+  {
+    name: "WIC MIC Group",
+    position: "Leading denim garment manufacturer in Tunisia",
+    content:
+      "Yassine tackled every challenge brilliantly, achieved well-deserved success, and delivered an amazing project with outstanding performance.",
+  },
 ]
 
 export default function Testimonials() {

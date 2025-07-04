@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 const educationData = [
   {
-    degree: " Bachelor’s Degree in IT Management (Business Intelligence)",
+    degree: " Bachelor’s Degree in Management Information System (MIS) (Business Intelligence)",
     school: "Higher Institute of Management Bizerte",
     year: "2022-2025",
     },
