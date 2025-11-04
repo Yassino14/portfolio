@@ -173,6 +173,42 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/Yassino14/Dashboard-Smart-Stock",
     websiteLink: "https://yassino14.github.io/Dashboard-Smart-Stock/",
   },
+  {
+    title: "Zaytoun - Palestinian Identity Website ",
+    description:
+      "Zaytoun is a lightweight website and AI chatbot that preserves Palestinian memory, culture, and truth.",
+    image: "/zaytoun.png",
+    tags: ["Chatbot", "Palestine", "Gemini"],
+    githubLink: "https://github.com/Yassino14/Zaytoun-",
+    websiteLink: "https://yassino14.github.io/Zaytoun-",
+  },
+  {
+    title: "ZooLand - Interactive Zoo Website",
+    description:
+      "This isn't just a website; it's a dynamic, interactive platform built to bring the wonders of the animal kingdom to your fingertips",
+    image: "/zooland.png",
+    tags: ["Gemini", "Zoo", "Chatbot"],
+    githubLink: "https://github.com/Yassino14/Zooland",
+    websiteLink: "https://yassino14.github.io/Zooland",
+  },
+  {
+    title: "VisionDB - SQL Query Guide ",
+    description:
+      "a practical bridge from visual insights to the queries that create them",
+    image: "/visiondb.png",
+    tags: ["SQL", "Query", "Database"],
+    githubLink: "https://github.com/Yassino14/VisionDB",
+    websiteLink: "https://yassino14.github.io/VisionDB",
+  },
+   {
+    title: "VisionMapper - The mind mapping tool ",
+    description:
+      "Get a full interactive mind map in seconds.",
+    image: "/visionmap.png",
+    tags: ["MindMap", "tool", "Brainstorm"],
+    githubLink: "https://github.com/Yassino14/VisionMapper",
+    websiteLink: "https://yassino14.github.io/VisionMapper",
+  },
 ]
 
 export default function Projects() {
