@@ -4,6 +4,11 @@ import { motion } from "framer-motion"
 
 const educationData = [
   {
+    degree: " Engineering’s Degree in Data Science and Artificial Intelligence",
+    school: "TEK-UP University Of Digital Sciences ",
+    year: "2025-2028",
+    },
+  {
     degree: " Bachelor’s Degree in Management Information System (MIS) (Business Intelligence)",
     school: "Higher Institute of Management Bizerte",
     year: "2022-2025",

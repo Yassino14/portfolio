@@ -13,7 +13,7 @@ const aboutItems = [
   },
   { title: "Problem Solver & Optimizer", content: "Enjoys tackling complex challenges." },
   {
-    title: "AI & Data Enthusiast",
+    title: "AI & Data Science Engineer",
     content: "From machine learning models to data-driven insights, always exploring the power of AI.",
   },
   {
@@ -24,6 +24,11 @@ const aboutItems = [
 
 // --- Data for the new "Clubs" section ---
 const clubItems = [
+  {
+    name: "InnovLab Tekup",
+    subtitle: "Member ",
+    icon: FaHandsHelping,
+  },
   {
     name: "Tunisian Red Crescent",
     subtitle: "Volunteer",
