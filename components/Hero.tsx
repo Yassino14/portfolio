@@ -85,7 +85,7 @@ export default function Hero() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="text-2xl md:text-3xl text-[#64ffda] mb-6"
       >
-       Data Scientist, Youtube Content Creator and AI & ML Enthusiast
+       Data Science and AI Engineer, Youtube Content Creator and AI & ML Enthusiast
       </motion.h2>
       <motion.p
         initial={{ y: 20, opacity: 0 }}
