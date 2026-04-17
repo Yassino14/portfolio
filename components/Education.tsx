@@ -33,7 +33,6 @@ export default function Education() {
           Education
         </motion.h2>
         <div className="relative">
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-600"></div>
           {educationData.map((edu, index) => (
             <motion.div
               key={index}

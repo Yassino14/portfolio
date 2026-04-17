@@ -42,7 +42,7 @@ const projectsData: Project[] = [
     image: "/portfolio.png",
     tags: ["Next.js", "Web Development", "Portfolio"],
     githubLink: "https://github.com/Yassino14/portfolio.git",
-    websiteLink: "https://yassinolouati.me",
+    websiteLink: "https://www.foryassinozone.tech",
   },
   {
     title: "Vlogs & Travel Videos in King Yassino",
@@ -209,6 +209,34 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/Yassino14/VisionMapper",
     websiteLink: "https://yassino14.github.io/VisionMapper",
   },
+
+  {
+    title: "Local AI voice assistant",
+    description:
+      "speech with gTTS and Gemini model at the backend ",
+    image: "/him.png",
+    tags: ["AI", "Voice", "Assistant"],
+    githubLink: "https://github.com/Yassino14/Him-Local-AI-Voice-Assistant",
+    
+  },
+   {
+    title: "Vision Front ",
+    description:
+      "250+ essential, production-ready code snippets across 10 different frameworks",
+    image: "/visionf.jfif",
+    tags: ["AI", "Voice", "Assistant"],
+    githubLink:  "https://github.com/Yassino14/VisionFront",
+    websiteLink: "https://yassino14.github.io/VisionFront/",
+  },
+  {
+    title: "KIKI Joke website",
+    description: "a lightweight, mobile-friendly jokes site with JkeAPI for English/French fallback.",
+    image: "/KIKI.jfif", 
+    tags: ["Jokes", "API", "Web Development"],
+    githubLink: "https://github.com/Yassino14/KIKI-Jokes",
+    websiteLink: "https://yassino14.github.io/KIKI-Jokes/",
+  },
+  
 ]
 
 export default function Projects() {
