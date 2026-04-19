@@ -14,7 +14,7 @@ const certifications = [
   },
   {
     title: "Introduction to Prompt Engineering with GitHub Copilot",
-    image: "/github.png",
+    image: "/Github.png",
    
   },
   {

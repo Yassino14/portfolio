@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { Kanban } from "lucide-react"
 import {
   FaReact,
   FaPython,
@@ -77,10 +78,9 @@ const skillsData = [
     icon: FaDatabase,
     skills: [
       { name: "SQL", icon: FaDatabase, color: "#4479A1" },
-      { name: "MySQL", icon: FaDatabase, color: "#00758F" },
+      { name: "MySQL", icon: SiMysql, color: "#00758F" },
       { name: "PostgreSQL", icon: FaDatabase, color: "#336791" },
-      { name: "SQL Server", icon: SiMysql, color: "#CC2927" }, // Fallback to SiMysql for SQL Server
-      { name: "OracleDB", icon: FaDatabase, color: "#F80000" },
+      { name: "MongoDB", icon: FaDatabase, color: "#47A248" },
     ],
   },
   {
@@ -88,6 +88,7 @@ const skillsData = [
     icon: FaCode,
     skills: [
       { name: "Jira", icon: FaJira, color: "#0052CC" },
+      { name: "Kanban", icon: Kanban, color: "#0079BF" }, // Added
       { name: "Swagger", icon: SiSwagger, color: "#85EA2D" }, // Added
       { name: "StarUML", icon: FaStar, color: "#E36332" }, // Added
       { name: "Android Studio", icon: FaAndroid, color: "#3DDC84" },
@@ -110,7 +111,6 @@ const skillsData = [
     ],
   },
 ]
-
 export default function Skills() {
   return (
     <section id="skills" className="py-20">
