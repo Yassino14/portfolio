@@ -62,7 +62,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Image
-              src="/pp.png"
+              src="ppp.png"
               alt=""
               layout="fill"
               objectFit="cover"
